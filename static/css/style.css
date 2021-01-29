@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+/*For very small devices (phones) 600px and down */
+@media only screen and (max-width: 600px) {
+  /*fit text to small screen */
+  body {
+    overflow: auto;
+    text-overflow: ellipsis;
+  }
+  /* scale down or up image size to fit small 
+  screen but never go over orginal size */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  display: flex; /* display flexbox*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#author  {
+  font-style: italic;
+}
+
+figcaption {
+  font-style: italic;
+}
